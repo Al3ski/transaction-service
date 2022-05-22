@@ -11,5 +11,7 @@ public interface TransactionRepository {
 
     List<Transaction> retrieveByAccount(UUID accountId);
 
+    List<Transaction> retrieveByAccounts(List<UUID> accountIds);
+
     void save(Transaction transaction);
 }

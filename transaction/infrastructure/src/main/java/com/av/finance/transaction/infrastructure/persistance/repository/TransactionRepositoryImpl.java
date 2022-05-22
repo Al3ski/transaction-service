@@ -37,6 +37,14 @@ public class TransactionRepositoryImpl implements TransactionRepository {
     }
 
     @Override
+    public List<Transaction> retrieveByAccounts(List<UUID> accountIds) {
+        final List<TransactionEntity> entities = transactionDao.findAllByAccountIdIn(accountIds);
+        final List<Transaction> transactions = mapper.toTransactions(entities);
+        log.debug("Found transactions: {} for accounts: {}", transactions, accountIds);
+        return transactions;
+    }
+
+    @Override
     public void save(Transaction transaction) {
         transactionDao.save(mapper.toEntity(transaction));
         log.debug("Transaction: {} successfully created", transaction);

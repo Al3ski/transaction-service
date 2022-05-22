@@ -28,6 +28,11 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
+    public List<Transaction> retrieveByAccounts(List<UUID> accountIds) {
+        return transactionRepository.retrieveByAccounts(accountIds);
+    }
+
+    @Override
     public UUID createTransaction(UUID accountId, TransactionType type, BigDecimal initialCredit, String details) {
         final Transaction transaction = Transaction.create(accountId, type, initialCredit, details);
         transactionRepository.save(transaction);

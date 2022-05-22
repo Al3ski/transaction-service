@@ -11,4 +11,6 @@ import java.util.UUID;
 public interface TransactionDao extends CrudRepository<TransactionEntity, UUID> {
 
     List<TransactionEntity> findAllByAccountId(UUID accountId);
+
+    List<TransactionEntity> findAllByAccountIdIn(List<UUID> accountIds);
 }
