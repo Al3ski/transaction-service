@@ -13,5 +13,7 @@ public interface TransactionService {
 
     List<Transaction> retrieveByAccount(UUID accountId);
 
+    List<Transaction> retrieveByAccounts(List<UUID> accountIds);
+
     UUID createTransaction(UUID accountId, TransactionType type, BigDecimal initialCredit, String details);
 }
