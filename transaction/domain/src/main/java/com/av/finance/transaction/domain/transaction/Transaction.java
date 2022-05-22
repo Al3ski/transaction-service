@@ -9,9 +9,9 @@ public class Transaction {
 
     private final UUID txId;
     private final UUID accountId;
-    private final String details;
     private final TransactionType txType;
     private final BigDecimal amount;
+    private final String details;
 
     private Transaction(UUID txId, UUID accountId, TransactionType type, BigDecimal amount, String details) {
         if (txId == null) {

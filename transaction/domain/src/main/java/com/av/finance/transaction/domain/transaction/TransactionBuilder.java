@@ -3,7 +3,7 @@ package com.av.finance.transaction.domain.transaction;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-class TransactionBuilder {
+public class TransactionBuilder {
 
     UUID txId;
     UUID accountId;
