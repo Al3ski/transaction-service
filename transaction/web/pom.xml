@@ -12,7 +12,7 @@
     </parent>
 
     <groupId>com.av.finance.transaction</groupId>
-    <artifactId>application</artifactId>
+    <artifactId>web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <packaging>jar</packaging>
@@ -29,6 +29,11 @@
         <dependency>
             <groupId>com.av.finance.transaction</groupId>
             <artifactId>domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.av.finance.transaction</groupId>
+            <artifactId>application</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
