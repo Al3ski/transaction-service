@@ -16,8 +16,10 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>application</module>
         <module>domain</module>
+        <module>application</module>
+        <module>web</module>
         <module>infrastructure</module>
+        <module>transaction-app</module>
     </modules>
 </project>
