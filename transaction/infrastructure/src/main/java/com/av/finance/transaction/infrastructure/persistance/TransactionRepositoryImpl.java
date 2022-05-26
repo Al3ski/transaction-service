@@ -1,10 +1,7 @@
-package com.av.finance.transaction.infrastructure.persistance.repository;
+package com.av.finance.transaction.infrastructure.persistance;
 
 import com.av.finance.transaction.domain.transaction.Transaction;
 import com.av.finance.transaction.domain.transaction.repository.TransactionRepository;
-import com.av.finance.transaction.infrastructure.persistance.dao.TransactionDao;
-import com.av.finance.transaction.infrastructure.persistance.entity.TransactionEntity;
-import com.av.finance.transaction.infrastructure.persistance.mapper.TransactionMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
