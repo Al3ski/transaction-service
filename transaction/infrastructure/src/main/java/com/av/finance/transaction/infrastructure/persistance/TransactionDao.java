@@ -1,6 +1,5 @@
-package com.av.finance.transaction.infrastructure.persistance.dao;
+package com.av.finance.transaction.infrastructure.persistance;
 
-import com.av.finance.transaction.infrastructure.persistance.entity.TransactionEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 

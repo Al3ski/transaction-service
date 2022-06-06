@@ -1,7 +1,6 @@
-package com.av.finance.transaction.infrastructure.persistance.mapper;
+package com.av.finance.transaction.infrastructure.persistance;
 
 import com.av.finance.transaction.domain.transaction.Transaction;
-import com.av.finance.transaction.infrastructure.persistance.entity.TransactionEntity;
 import org.mapstruct.Mapper;
 
 import java.util.List;

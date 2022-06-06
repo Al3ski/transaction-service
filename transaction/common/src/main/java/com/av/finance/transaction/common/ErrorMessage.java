@@ -1,12 +1,10 @@
 package com.av.finance.transaction.common;
 
-import java.util.StringJoiner;
-
 public class ErrorMessage {
 
-    private final String errorMessage;
-
     private final String errorCode;
+
+    private final String errorMessage;
 
     private String details;
 
@@ -19,5 +17,17 @@ public class ErrorMessage {
         this.errorMessage = errorMessage;
         this.errorCode = errorCode;
         this.details = details;
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    public String getDetails() {
+        return details;
     }
 }
